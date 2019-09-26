@@ -302,7 +302,8 @@ footer {
   .block-face {
     flex-direction: column; }
     .block-face__left {
-      width: 100% !important; }
+      width: 100% !important;
+      text-align: center;}
     .block-face__right {
       width: 100% !important; }
       .block-face__right img {
