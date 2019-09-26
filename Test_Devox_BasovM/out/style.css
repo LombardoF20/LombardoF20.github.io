@@ -68,7 +68,12 @@
     z-index: 1; }
     .block-main .block-face__left {
       width: 50%;
-      z-index: 1; }
+      z-index: 1; 
+      color:#fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: left;}
       .block-main .block-face__left h1 {
         font-family: Lato;
         font-style: normal;
@@ -91,12 +96,16 @@
         font-size: 18px;
         line-height: 22px;
         background: #E95A0C;
+        color: #fff;
         border: 1px solid #E95A0C;
         padding: 14px 45px;
-        transition: 0.5s ease; }
+        transition: 0.5s ease; 
+        width: 170px;
+        height: 50px;
+        margin-top: 40px;}
         .block-main .block-face__left input:hover {
           background: none;
-          color: #fff;
+          color: #000;
           border: 1px solid #E95A0C; }
     .block-main .block-face__right {
       width: 50%;
