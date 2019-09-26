@@ -303,7 +303,10 @@ footer {
     flex-direction: column; }
     .block-face__left {
       width: 100% !important;
-      text-align: center;}
+      text-align: center !important;}
+  .block-face__left input {
+    margin: 0 auto;
+    margin-top: 40px;}
     .block-face__right {
       width: 100% !important; }
       .block-face__right img {
