@@ -1,0 +1,14 @@
+.aflexrow {
+	/*display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;*/
+	display: inline-block;
+	width: 150px;
+}
+
+.aflexrow div {
+	margin-left: 15px;
+	background-color: #dedede;
+}

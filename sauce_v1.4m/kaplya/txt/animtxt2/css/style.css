@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap");
+$stage-size: 500;
+* {
+  margin: 0;
+}
+body {
+  background: #000;
+  color: white;
+  font-family: Arial, sans;
+  text-align: center;
+}
+.wrapper {
+  margin: 0 auto;
+  width: #{500}px;
+}
+.loadFont {
+  font-family: "Titillium Web";
+}
+canvas {
+  height: #{500}px;
+  width: #{500}px;
+}
+input[type="text"] {
+  margin: 5px 10px;
+  text-align: center;
+  width: 50px;
+}
