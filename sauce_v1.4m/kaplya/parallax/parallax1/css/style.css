@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:800');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  overflow: hidden;
+}
+
+ul {
+    height: 100%;
+    width: 100%;
+}
+
+li {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("https://i.postimg.cc/c4zCYgjS/Space-BG.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img {
+  width: auto;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#scientist {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-shadow: 0 0 30px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.about {
+  position: absolute;
+  background-color: rgba(255,255,255,0.5);
+  background-position: center;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: background 500ms;
+  text-decoration: none;
+}
+
+.about:hover {
+  background: rgba(255, 255, 255,0.7) radial-gradient(circle, transparent 1%, rgba(255, 255, 255,0.7) 1%) center/15000%;
+}
+
+.about:active {
+  background-color: rgb(255,255,255);
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.about i {
+  font-size: 1.5rem;
+  color: rgb(255,100,100);
+}
+
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+}
+
+.modal.active {
+  transform: scale(1);
+}
+
+.modal .modal__card {
+  position: relative;
+  background-color: rgb(255,255,255);
+  padding: 3rem 5rem;
+  transform: scale(0);
+  transition: transform 500ms;
+}
+
+@media (min-width: 505px) {
+  .modal .modal__card {
+    border-radius: 1rem;
+    width: 80%;
+    height: 60%;
+    max-width: 600px;
+    min-height: 500px;
+    overflow: hidden;
+  }
+}
+
+.modal.active .modal__card {
+  transform: scale(1);
+}
+
+.modal .modal__card p {
+  margin: 2rem 0;
+}
+
+.modal .modal__card .modal__card__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  width: 1.8em;
+  height: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 500ms;
+  text-decoration: none;
+  color: rgb(33,33,33);
+  font-size: 2rem;
+  border: 2px dashed;
+  transition: color 500ms, transform 250ms;
+}
+
+.modal .modal__card .modal__card__close:hover {
+  color: rgba(33,33,33,0.3);
+}
+
+.modal .modal__card .modal__card__close:active {
+  transform: rotate(360deg);
+}
