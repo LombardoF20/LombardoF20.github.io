@@ -1,0 +1,117 @@
+BODY {
+  perspective: 1000px;
+  perspective-origin: center -5em;
+  overflow: hidden;
+  font-size: 14px;
+  background: #000;
+  background-image: linear-gradient(to right, hsla(0,0%,100%,.025) 50%, transparent  50%);
+  background-size: 2rem 100%;
+  }
+
+
+.side,
+.container {
+  width: 10em;
+  height: 10em;
+  }
+
+.container {
+  margin-top: 200px;
+  /* border: 2px dotted white; */
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+  }
+  .container:before,
+  .container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    /* border: 2px dotted white; */
+    }
+    .container:before {
+      transform: rotateX(90deg);
+      }
+    .container:after {
+      transform: rotatey(90deg);
+      }
+
+.side-anim {
+  transform: translateZ(7em);
+  background: url(https://media1.tenor.com/images/e822453883fa928cb3bc855e4491f11b/tenor.gif) center;
+  background-repeat: no-repeat;
+  animation: fade 5s infinite linear;
+}
+
+.side {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  /* border: 1px solid white; */
+  opacity: .7;
+  }
+
+.back {
+  transform: translateZ(-5em);
+  background: url(https://stickersvk.com/i/128/128.png) center;
+  background-repeat: no-repeat;
+  }
+
+.left {
+  transform: translateX(-5em) rotateY(90deg);
+  background: url(https://stickersvk.com/i/128/128.png) center;
+  background-repeat: no-repeat;
+  }
+
+.right {
+  transform: translateX(5em) rotateY(90deg);
+  background: url(https://stickersvk.com/i/128/128.png) center;
+  background-repeat: no-repeat;
+  }
+.top {
+  transform: translateY(-5em) rotateX(90deg);
+  background: url(https://stickersvk.com/i/128/128.png) center;
+  background-repeat: no-repeat;
+  }
+
+.bottom {
+  transform: translateY(5em) rotateX(90deg);
+  background: url(https://wiki-vk.ru/s/003/128/3.png) center;
+  background-repeat: no-repeat;
+  }
+
+.front {
+  transform: translateZ(5em);
+  background: url(https://stickersvk.com/i/128/128.png) center;
+  background-repeat: no-repeat;
+  }
+
+@keyframes rotate {
+  100% {
+    transform: rotatex(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Helpers
+
+HTML, BODY {
+    height: 100%;
+}
+
+BODY {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
