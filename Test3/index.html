@@ -159,15 +159,23 @@
 
   <script type="text/javascript">
     $('.swiper-container').swiper({
+      effect: 'coverflow',
   pagination: '.swiper-pagination',
   paginationClickable: true,
   paginationBulletRender: function(index, className) {
     return '<span class="' + className + '">' + '</span>';
   },
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows : true,
+  },
   direction: 'vertical',
   slidesPerView: 1,
   paginationClickable: true,
-//   spaceBetween: 30,
+  // spaceBetween: 30,
   mousewheelControl: true,
   mousewheelForceToAxis: true,
   speed: 600
