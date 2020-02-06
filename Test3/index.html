@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
   <!-- Link Swiper's CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/swiper.css">
+<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
 <link rel="stylesheet" href="css/master.css">
 
   <!-- Demo styles -->
@@ -137,24 +138,41 @@
   </div>
 
   <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
+  <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="css/swiper.js"></script>
+  <!-- <script>
     var swiper = new Swiper('.swiper-container', {
       direction: 'vertical',
+      slidesPerView: 1,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
-        mousewheel: {
-        invert: false,
-      },
+        mousewheel: {},
       keyboard: {
 		enabled:true,
 		onlyInViewport:false
 	}
     });
+  </script> -->
+
+  <script type="text/javascript">
+    $('.swiper-container').swiper({
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  paginationBulletRender: function(index, className) {
+    return '<span class="' + className + '">' + (index + 1) + '</span>';
+  },
+  direction: 'vertical',
+  slidesPerView: 1,
+  paginationClickable: true,
+  spaceBetween: 30,
+  mousewheelControl: true,
+  mousewheelForceToAxis: true,
+  speed: 600
+});
+
   </script>
 </body>
 </html>
