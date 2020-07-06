@@ -1,0 +1,255 @@
+* {
+  /* padding: 0; */
+  /* margin: 0; */
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  background: url('img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+.nav img {
+  width: 120px;
+  height: 120px;
+}
+
+.nav {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  height: 140px;
+}
+
+.nav a {
+  color: #42949B;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.nav-items_span {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.nav-items_span span {
+  width: 1px;
+  height: 34px;
+  background-color: #E5E5E5;
+  display: block;
+}
+
+.nav-items_span a {
+  margin: 0 14px;
+}
+
+.nav-items {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.block-contentHead {
+  margin-top: 247px;
+  margin-bottom: 126px;
+}
+
+.block-contentHead_txt {
+  margin-top: 160px;
+}
+
+.block-contentHead_txt p {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: baseline;
+  align-items: baseline;
+  color: #7b797e;
+}
+
+.block-contentHead_txt p span {
+  display: contents;
+  color: #000;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.block-contentHead_txt p::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(135deg, #42949B 4.18%, #355779 92.56%, #30406C 92.57%);
+  border-radius: 2px;
+  transform: rotate(45deg);
+  margin-right: 11px;
+}
+
+.samolot {
+  position: relative;
+}
+
+.samolot .iframe {
+  /* position: absolute; */
+}
+
+.samolot img {
+  width: 100%;
+  height: 100%;
+}
+
+.samolot .btn-show {
+  max-width: 210px;
+  min-height: 60px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0px;
+  position: static;
+  width: 100%;
+  height: 208px;
+  background: linear-gradient(139.85deg, rgba(54, 130, 138, 0.75) 14.94%, rgba(48, 64, 108, 0.75) 89.2%);
+  border-radius: 15px;
+  border: 0px;
+  /* margin: 0 15px; */
+}
+
+.card p {
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.card .h3 {
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF
+}
+
+.block-character h2 {
+  font-family: ;
+font-style: normal;
+font-weight: 300;
+font-size: 72px;
+line-height: 86px;
+text-transform: uppercase;
+color: #2F3366;
+margin-top: 125px;
+}
+.block-character h2 span {
+  color: #36828A;
+  font-weight: bold;
+}
+.block-faq {
+  max-width: 440px;
+min-height: 600px;
+background: #FFFFFF;
+box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+padding: 0 25px;
+text-align: center;
+}
+.block-faq .tittle {
+  font-family: Fira Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 100px;
+text-align: center;
+text-transform: uppercase;
+height: 58px;
+color: #30406C;
+margin-bottom: 28px;
+}
+.faq-head{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #727271;
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.faq-head h2 {
+  font-family: 'Fira Sans', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #36828A;
+margin: 0;
+}
+.faq-head img {
+  transition: 0.3s;
+}
+.faq-body p {
+  font-family: 'Fira Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+color: #30406C;
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #C4C4C4;
+padding-bottom: 4px;
+}
+.faq-body p span {
+  font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #434242;
+}
+.faq-head.in img {
+  transform: rotate(180deg);
+}
+.faq-content {
+  display: none;
+}
+
+.faq-head.in .faq-content {
+  display: block;
+}
